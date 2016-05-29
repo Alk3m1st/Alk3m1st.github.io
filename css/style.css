@@ -55,7 +55,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #94b800;
 }
 a img:hover,
 a img:focus {
@@ -83,26 +83,29 @@ hr.small {
   font-weight: 800;
   letter-spacing: 1px;
 }
+.navbar-custom div {
+  background: #eee;
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #fff;
+    color: #94b800;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: fade(#fff, 80%);
+    color: grey-dark;
   }
   .navbar-custom .nav li a {
-    color: #fff;
+    color: grey-dark;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: fade(#fff, 80%);
+    color: #94b800;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -133,14 +136,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #94b800;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #94b800;
   }
   .navbar-custom.is-visible {
 /* if the user changes the scrolling direction, we show the header */
@@ -155,31 +158,27 @@ hr.small {
   background-color: #808080;
   background: no-repeat center center;
   background-attachment: scroll;
-  background-size: 100%;
+  background-size: 1000px;
   margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
-  color: #fff;
+  padding: 250px 0 25px;
+  color: grey-dark;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 125px 0;
   }
 }
 .intro-header .site-heading.archives,
 .intro-header .post-heading.archives,
 .intro-header .page-heading.archives {
-  color: #0085a1;
+  color: #94b800;
   margin-top: 60px;
-}
-.intro-header .site-heading,
-.intro-header .page-heading {
-  text-align: center;
 }
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
@@ -235,7 +234,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #94b800;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -265,7 +264,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #94b800;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -369,7 +368,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #94b800;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eee;
@@ -388,8 +387,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #94b800;
+  border: 1px solid #94b800;
   color: #fff;
 }
 .pager {
@@ -408,8 +407,8 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: #fff;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #94b800;
+  border: 1px solid #94b800;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -422,12 +421,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
-  background: #0085a1;
+  background: #94b800;
 }
 ::selection {
   color: #fff;
   text-shadow: none;
-  background: #0085a1;
+  background: #94b800;
 }
 img::selection {
   color: #fff;
@@ -438,7 +437,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #94b800;
 }
 article .container .row img {
   max-width: 100% !important;
