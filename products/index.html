@@ -56,6 +56,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
+    <!-- Toastr CSS -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" type="text/css">
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -208,6 +211,117 @@
                 
             </div>
 
+            <div class="col-md-8">
+  <h2>Contact us</h2>
+  <p id="returnMessage"></p>
+  <form method="post" id="contactForm">
+    <dl>
+        <dt><label for="name">Your name</label></dt>
+        <dd><input type="text" id="name" name="name" /></dd>
+        
+        <dt><label for="email">Your email</label></dt>
+        <dd><input type="email" id="email" name="email" /></dd>
+        
+        <dt><label for="message">Your message</label></dt>
+        <dd><textarea id="message" name="message" rows="10" cols="50"></textarea></dd>
+
+        <dt><label for="isHuman">Are you Human? if so what is <span id="isHumanQuestion"></span>?</label></dt>
+        <dd><input type="text" id="isHuman" name="isHuman" /></dd>
+    </dl>
+    <p>
+        <input type="submit" name="submitForm" id="submitForm" value="Submit" />
+    </p>
+    <p>
+        *Your message is sent via email. We will try to reply directly (or leave a comment if it's useful, I may even create an FAQ section).
+    </p>
+  </form>
+</div>
+
+<script type="text/javascript">
+    (function() {
+    var runMyCode = function($) {
+        // jquery-dependent code here
+        var isHumanQuestions = [
+            { partOne: "one", partTwo: "two", answer: 3 },
+            { partOne: "six", partTwo: "three", answer: 9 },
+            { partOne: "two", partTwo: "five", answer: 7 }
+        ];
+        var randomQuestion = isHumanQuestions[Math.floor((Math.random() * isHumanQuestions.length))];
+        $("#isHumanQuestion").text(randomQuestion.partOne + " + " + randomQuestion.partTwo);
+
+        $("#contactForm").submit(function(event) {
+            var emailPattern = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9])+$/;
+            var nameValue = $("#name").val().trim();
+            var emailValue = $("#email").val().trim();
+            var messageValue = $("#message").val().trim();
+            var isHumanValue = parseInt($("#isHuman").val(), 10);
+
+            event.preventDefault();
+
+            // basic validation
+            if(nameValue.length === 0) {
+                toastr.warning("Please enter your name");
+                return;
+            }
+
+            if(emailValue.length === 0 || !emailPattern.test(emailValue)) {
+                toastr.warning("Please enter a valid email address");
+                return;
+            }
+
+            if(messageValue.length === 0) {
+                toastr.warning("Please enter a message");
+                return;
+            }
+
+            if(isHumanValue === NaN || isHumanValue != randomQuestion.answer) {
+                toastr.warning("Please answer the question correctly so we know you're not a robot :)");
+                return;
+            }
+
+            // Make AJAX request to Azure Function (Sanitise here but we'll also do it on the server too)
+            $.ajax({
+                contentType: 'application/json',
+                crossDomain: true,
+                data: JSON.stringify({
+                    message: String(messageValue)
+                        .replace(/&/g, '&amp;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/\//g, '&#x2F;'),
+                    name: nameValue,
+                    email: emailValue
+                }),
+                headers: {},
+                method: 'POST',
+                url: 'https://functions-app.azurewebsites.net/api/emailmessagefunction'
+            })
+            .success(function(data, textStatus, jqXHR) {
+                toastr.success("Email sent. We will be in contact soon.");
+                $("#name").val("");
+                $("#email").val("");
+                $("#message").val("");
+                $("#isHuman").val("");
+            })
+            .error(function(jqXHR, textStatus, errorThrown) {
+                toastr.error("An error occurred: " + textStatus + " / " + errorThrown);
+            });
+        });
+    };
+
+    var timer = function() {
+        if (window.jQuery) {
+            runMyCode(window.jQuery);
+        } else {
+            window.setTimeout(timer, 200);
+        }
+    };
+    timer();
+    })();
+</script>
+
             <!-- Comments -->
             
             
@@ -279,6 +393,7 @@
     </div>
 </article>
 
+
     <!-- Footer -->
     <hr />
 
@@ -322,6 +437,9 @@
 
 <!-- Bootstrap -->
 <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Toastr -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Gallery -->
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
