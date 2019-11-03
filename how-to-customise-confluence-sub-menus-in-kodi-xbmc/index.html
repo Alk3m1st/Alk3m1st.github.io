@@ -1,374 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<!-- Head tag -->
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Description-->
-    
-        <meta name="description" content="Although Kodi is well documented via the wiki and forums, I couldn’t find a tutorial that explained how to customise the base theme (Confluence) to ha">
-    
-
-    <!--Author-->
-    
-        <meta name="author" content="Allan Oliveira">
-    
-
-    <!--Open Graph Title-->
-    
-        <meta property="og:title" content="How to customise Confluence sub-menus in Kodi (XBMC)"/>
-    
-
-    <!--Open Graph Description-->
-    
-        <meta property="og:description" content="null" />
-    
-
-    <!--Open Graph Site Name-->
-    <meta property="og:site_name" content="Alk3my"/>
-
-    <!--Type page-->
-    
-        <meta property="og:type" content="article" />
-    
-
-    <!--Page Cover-->
-    
-        <meta property="og:image" content="http://alk3my.comundefined"/>
-    
-
-        <meta name="twitter:card" content="summary" />
-    
-        <meta name="twitter:site" content="Alk3myApps>" />
-    
-
-    <!-- Title -->
-    
-    <title>How to customise Confluence sub-menus in Kodi (XBMC) - Alk3my</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Toastr CSS -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Gallery -->
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-33344205-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-
-</head>
-
-<body>
-
-    <!-- Menu -->
-    <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Alk3my.com</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                
-                    <li>
-                        <a href="/">
-                            
-                                Home
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/about">
-                            
-                                About
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/blog">
-                            
-                                Blog
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/products">
-                            
-                                Products
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-
-    <!-- Main Content -->
-    <!-- Page Header -->
-<!-- Set your background image for this header in your post front-matter: cover -->
-
-<header class="intro-header" style="background-image: url('/img/alk3my_header2.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>How to customise Confluence sub-menus in Kodi (XBMC)</h1>
-                    
-                    <span class="meta">
-                        <!-- Date and Author -->
-                        
-                        2015-04-04
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Tags and categories -->
-           
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-<a href="/categories/Uncategorized/">Uncategorized</a>
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                </div>
-            
-
-            <!-- Gallery -->
-            
-
-            <!-- Post Main Content -->
-            <div class="col-md-8">
-                <p>Although Kodi is well documented via the wiki and forums, I couldn’t find a tutorial that explained how to customise the base theme (Confluence) to have custom sub-menus. The idea was to separate the various genres of TV shows and Movie libraries into distinct menu options. As an example I have Anime, Kids and regular TV shows in my library but I don’t want to see them in the same view. Themes such as Aeon Flux allow a lot of customisation out of the box and you can achieve this using smart playlists and custom menus but in the end I was happiest with Confluence as long as I could set the menus/sub menus.</p>
-<h2 id="The-process"><a href="#The-process" class="headerlink" title="The process"></a>The process</h2><p>First up is separating your media. Although you could do it via genre or tags / other, it doesn’t give full control into the separation. An example of my file structure is below.</p>
-<p><pre>Anime<br>   |- Movies<br>   |- TV<br>Kids<br>   |- Movies<br>   |- TV<br>TV Series</pre><br>This structure allows the use of smart playlists based on path filtering. Make sure you’ve added these as sources in Kodi/XBMC and set the appropriate content on each folder (the source can just be the root though).</p>
-<h2 id="Smart-playlists"><a href="#Smart-playlists" class="headerlink" title="Smart playlists"></a>Smart playlists</h2><p>Next create your smart playlists. You can either use the editor built in to Kodi/XBMC or you can create it manually with an XML editor (or notepad equivalent). The location of these will be in your userdata folder (this means they can be backed up, are portable and will survive updates, etc.). The location varies based on operating system, for my windows machine this was…</p>
-<p>%AppData%\Kodi\userdata\playlists</p>
-<p>The location for other operating systems can be found in the Kodi <a href="http://kodi.wiki/view/Userdata" title="Kodi Userdata Wiki" target="_blank" rel="external">userdata wiki</a>. Also I was only tackling videos so it was further in the video folder (the process should be the same for music/mixed content). I was pretty comfortable editing manually as most of my playlists were very similar and only varied in path filter and label. See below an example.</p>
-<p><pre>&lt;?xml version=”1.0” encoding=”UTF-8” standalone=”yes” ?&gt;<br>&lt;smartplaylist type=”tvshows”&gt;<br>   &lt;name&gt;Anime&lt;/name&gt;<br>   &lt;match&gt;all&lt;/match&gt;<br>   &lt;rule field=”path” operator=”startswith”&gt;<br>      &lt;value&gt;smb://192.168.1.109/EX2/Anime/TV/&lt;/value&gt;<br>   &lt;/rule&gt;<br>&lt;/smartplaylist&gt;</pre><br>The rule could use the “contains” operator instead and just check for “Anime/TV/“ or similar. You can add other conditions and also ordering is possible. Many other options can be found in the Kodi <a href="http://kodi.wiki/view/Smart_playlists#Smart_playlist_for_video" title="Kodi Smart Playlist Wiki" target="_blank" rel="external">smart playlist wiki</a>. The wiki also shows the method using Kodi/XBMC which many will be more comfortable with.</p>
-<h2 id="Sub-menus"><a href="#Sub-menus" class="headerlink" title="Sub menus"></a>Sub menus</h2><p>Finally the next step was a bit harder to dig up info around. There was a modded customisable version of Confluence doing the rounds in the past and although I didn’t try it, I had read that it’s not really supported anymore. No matter, it’s still fairly easy to set up the sub-menus (or even main menus for that matter).</p>
-<p>First thing to do is copy the “skin.confluence” folder from the main Kodi folder into the addons folder one level up from your userdata section. This again allows you to back up and restore your set up at any point in the future. Again in the case of a windows installation the main folder was at this location…</p>
-<p>C:\Program Files (x86)\Kodi\addons</p>
-<p>The folder it was copied to was…</p>
-<p>%AppData%\Kodi\addons</p>
-<p>Now inside this folder you’ll find a “720p” folder. In here you’re looking to edit “IncludesHomeMenuItems.xml” (might want to take a back up incase you edit something incorrectly and need to get back to how it was).</p>
-<p>Open it up in your XML editor or choice (or NotePad/TextEdit/nano will do), I prefer Sublime Text 2. The structure is simple includes &gt; include &gt; control. You’re looking to add/remove controls within the include of choice. I wanted my sub-menus under Movies and TVShows so this meant adding/removing controls from “HomeSubMenuMovies” and “HomeSubMenuTVShows” respectively. Leave the image controls at the start and end alone (they’re just for the look of the submenus at their ends). Changing the control order in the file changes the order in Kodi/XBMC.</p>
-<p>It’s hard to know what the existing controls are for because their label tag points to an id (of stored label names) rather than an actual label. However the onclick tag gives it away. Most are using the ActivateWindow() function (which we will also use) in the format of, for example (Videos, MoviesActors, return). What this means is it’s using the Videos library, targeting movies, grouped by actors (ignore the return, it has to do with the action when you click back, whether you return to the root menu or not). The following page in the Kodi wiki explains the ActivateWindow function and it’s parameters.</p>
-<p>So what we want to do is remove (or comment out using &lt;!– –&gt;) those controls we don’t care about. I commented out the movie genre, actors and years controls as I rarely use them. Now we add our items and target our smart playlists. Below is an example.</p>
-<p><pre>&lt;control type=”button” id=”99000”&gt;<br>   &lt;include&gt;ButtonHomeSubCommonValues&lt;/include&gt;<br>   &lt;label&gt;Kids&lt;/label&gt;<br>   &lt;onclick&gt;ActivateWindow(Videos,special://userdata/playlists/video/KidsMovies.xsp,return)&lt;/onclick&gt;<br>&lt;/control&gt;</pre><br>It’s quite similar to the existing items except I’ve explicitly placed a text label there and the ActivateWindow function is a bit different this time. I’m still targeting the Videos database, however I’m using the “special” (protocol I guess it could be called) to get to our userdata path and then target the respective smart playlist. Now take note, your controls all need an Id and it needs to be unique for each of them. I started at the 99000s as nothing else in the file had these.</p>
-<p>Btw, editing the main menu items is also simple, just look in the “Home.xml” file instead.</p>
-
-
-                
-            </div>
-
-            <!-- Comments -->
-            
-                <div class="col-md-8">
-                    
-    <hr />
-    <h3>Comments:</h3>
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-
-
-                </div>
-            
-            
-            <div class="col-md-4">
-                
-                    
-  <div class="widget-wrap">
-    <h3 class="widget-title">recent_posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/how-to-customise-confluence-sub-menus-in-kodi-xbmc/">How to customise Confluence sub-menus in Kodi (XBMC)</a>
-          </li>
-        
-          <li>
-            <a href="/add-ntfs-external-drive-to-raspberry-pi-2-raspian/">Add NTFS External drive to Raspberry Pi 2 (Raspian)</a>
-          </li>
-        
-          <li>
-            <a href="/set-up-ionic-framework/">Set up Ionic framework</a>
-          </li>
-        
-          <li>
-            <a href="/simple-http-server-for-cordova-development/">Simple HTTP server for Cordova development</a>
-          </li>
-        
-          <li>
-            <a href="/updating-cordova-phonegap-to-version-3-x/">Updating Cordova (PhoneGap) to version 3.x</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-                
-                    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">April 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/09/">September 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">August 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">July 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">February 2013</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">October 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/09/">September 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/08/">August 2012</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/07/">July 2012</a></li></ul>
-    </div>
-  </div>
-
-
-                
-                    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categorias</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/NET/">.NET</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/NET/ASP-MVC/">ASP MVC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/NET/ASP-MVC/UI-Testing/">UI Testing</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/JavaScript/">JavaScript</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/JavaScript/NodeJS/">NodeJS</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/NodeJS/">NodeJS</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/NodeJS/">NodeJS</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/NodeJS/UI-Testing/">UI Testing</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/TypeScript/">TypeScript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/UI-Testing/">UI Testing</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Uncategorized/">Uncategorized</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-API/">Web API</a></li></ul>
-    </div>
-  </div>
-
-
-                
-                    
-  <div class="widget-wrap">
-    <h3 class="widget-title">tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/rootScope/">$rootScope</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AngularJS/">AngularJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CacheOutput/">CacheOutput</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CommonJS/">CommonJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cordova/">Cordova</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HttpClient/">HttpClient</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MVC/">MVC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/">NodeJS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PageObjects/">PageObjects</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Selenium/">Selenium</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testing/">Testing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TypeScript/">TypeScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UI/">UI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-API/">Web API</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebDriver/">WebDriver</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http-server/">http-server</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/routes/">routes</a></li></ul>
-    </div>
-  </div>
-
-
-                
-            </div>
-        </div>
-    </div>
-</article>
-
-    <!-- Footer -->
-    <hr />
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <a href="mailto:support@alk3my.com" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    
-                </ul>
-                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
-                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-    <!-- After footer scripts -->
-    
-<!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Toastr -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" type="text/javascript" charset="utf-8"></script>
-
-<!-- Gallery -->
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-
-<!-- Disqus Comments -->
-
-<script type="text/javascript">
-    var disqus_shortname = 'alk3my';
-
-    (function(){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-</body>
-
-</html>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.96652f6e649beada85dd.css">code[class*=language-],pre[class*=language-]{color:#000;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{position:relative;margin:.5em 0;overflow:visible;padding:0}pre[class*=language-]>code{position:relative;border-left:10px solid #358ccb;box-shadow:-1px 0 0 0 #358ccb,0 0 0 1px #dfdfdf;background-color:#fdfdfd;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(50%,transparent),color-stop(50%,rgba(69,142,209,.04)));background-image:linear-gradient(transparent 50%,rgba(69,142,209,.04) 0);background-size:3em 3em;background-origin:content-box;background-attachment:local}code[class*=language]{max-height:inherit;height:inherit;padding:0 1em;display:block;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdfdfd;box-sizing:border-box;margin-bottom:1em}:not(pre)>code[class*=language-]{position:relative;padding:.2em;border-radius:.3em;color:#c92c2c;border:1px solid rgba(0,0,0,.1);display:inline;white-space:normal}pre[class*=language-]:after,pre[class*=language-]:before{content:"";z-index:-2;display:block;position:absolute;bottom:.75em;left:.18em;width:40%;height:20%;max-height:13em;box-shadow:0 13px 8px #979797;-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}:not(pre)>code[class*=language-]:after,pre[class*=language-]:after{right:.75em;left:auto;-webkit-transform:rotate(2deg);transform:rotate(2deg)}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#7d8b99}.token.punctuation{color:#5f6364}.token.boolean,.token.constant,.token.deleted,.token.function-name,.token.number,.token.property,.token.symbol,.token.tag{color:#c92c2c}.token.attr-name,.token.builtin,.token.char,.token.function,.token.inserted,.token.selector,.token.string{color:#2f9c0a}.token.entity,.token.operator,.token.url,.token.variable{color:#a67f59;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.class-name,.token.keyword{color:#1990b8}.token.important,.token.regex{color:#e90}.language-css .token.string,.style .token.string{color:#a67f59;background:hsla(0,0%,100%,.5)}.token.important{font-weight:400}.token.bold{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.namespace{opacity:.7}@media screen and (max-width:767px){pre[class*=language-]:after,pre[class*=language-]:before{bottom:14px;box-shadow:none}}.token.cr:before,.token.lf:before,.token.tab:not(:empty):before{color:#e0d7d1}pre[class*=language-].line-numbers.line-numbers{padding-left:0}pre[class*=language-].line-numbers.line-numbers code{padding-left:3.8em}pre[class*=language-].line-numbers.line-numbers .line-numbers-rows{left:0}pre[class*=language-][data-line]{padding-top:0;padding-bottom:0;padding-left:0}pre[data-line] code{position:relative;padding-left:4em}pre .line-highlight{margin-top:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style><meta name="generator" content="Gatsby 2.17.7"/><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><title data-react-helmet="true">Alk3my - How to customise Confluence sub-menus in Kodi (XBMC)</title><link rel="icon" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=008654519ce705ac7bc44303a9014606"/><script>
+            var clicky_site_ids = clicky_site_ids || [];
+            clicky_site_ids.push(101219270);
+          </script><script async="" type="text/javascript" src="//static.getclicky.com/js"></script><link as="script" rel="preload" href="/app-04b2cc8f2bbde2ee124b.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-d4a877ce87da7f1aeeba.js"/><link as="script" rel="preload" href="/styles-b36d26e0bd319d623cd5.js"/><link as="script" rel="preload" href="/commons-0ef128c00b983c39b4bc.js"/><link as="script" rel="preload" href="/webpack-runtime-b60f1a090960404fc395.js"/><link as="fetch" rel="preload" href="/page-data\how-to-customise-confluence-sub-menus-in-kodi-xbmc\page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><header style="background:rebeccapurple;margin-bottom:1.45rem"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem"><h1 style="margin:0"><a style="color:white;text-decoration:none" href="/">Alk3my</a></h1></div></header><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0"><main><div class="blog-post"><h1>How to customise Confluence sub-menus in Kodi (XBMC)</h1><h2>April 04, 2015</h2><div class="blog-post-content"><p>Although Kodi is well documented via the wiki and forums, I couldn't find a tutorial that explained how to customise the base theme (Confluence) to have custom sub-menus. The idea was to separate the various genres of TV shows and Movie libraries into distinct menu options. As an example I have Anime, Kids and regular TV shows in my library but I don't want to see them in the same view. Themes such as Aeon Flux allow a lot of customisation out of the box and you can achieve this using smart playlists and custom menus but in the end I was happiest with Confluence as long as I could set the menus/sub menus.</p>
+<h2>The process</h2>
+<p>First up is separating your media. Although you could do it via genre or tags / other, it doesn't give full control into the separation. An example of my file structure is below.</p>
+<pre>Anime
+   |- Movies
+   |- TV
+Kids
+   |- Movies
+   |- TV
+TV Series</pre>
+<p>This structure allows the use of smart playlists based on path filtering. Make sure you've added these as sources in Kodi/XBMC and set the appropriate content on each folder (the source can just be the root though).</p>
+<h2>Smart playlists</h2>
+<p>Next create your smart playlists. You can either use the editor built in to Kodi/XBMC or you can create it manually with an XML editor (or notepad equivalent). The location of these will be in your userdata folder (this means they can be backed up, are portable and will survive updates, etc.). The location varies based on operating system, for my windows machine this was...</p>
+<p><code class="language-text">%AppData%\Kodi\userdata\playlists</code></p>
+<p>The location for other operating systems can be found in the Kodi <a href="http://kodi.wiki/view/Userdata" title="Kodi Userdata Wiki">userdata wiki</a>. Also I was only tackling videos so it was further in the video folder (the process should be the same for music/mixed content). I was pretty comfortable editing manually as most of my playlists were very similar and only varied in path filter and label. See below an example.</p>
+<pre>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes" ?&gt;
+&lt;smartplaylist type="tvshows"&gt;
+   &lt;name&gt;Anime&lt;/name&gt;
+   &lt;match&gt;all&lt;/match&gt;
+   &lt;rule field="path" operator="startswith"&gt;
+      &lt;value&gt;smb://192.168.1.109/EX2/Anime/TV/&lt;/value&gt;
+   &lt;/rule&gt;
+&lt;/smartplaylist&gt;</pre>
+<p>The rule could use the "contains" operator instead and just check for "Anime/TV/" or similar. You can add other conditions and also ordering is possible. Many other options can be found in the Kodi <a href="http://kodi.wiki/view/Smart_playlists#Smart_playlist_for_video" title="Kodi Smart Playlist Wiki">smart playlist wiki</a>. The wiki also shows the method using Kodi/XBMC which many will be more comfortable with.</p>
+<h2>Sub menus</h2>
+<p>Finally the next step was a bit harder to dig up info around. There was a modded customisable version of Confluence doing the rounds in the past and although I didn't try it, I had read that it's not really supported anymore. No matter, it's still fairly easy to set up the sub-menus (or even main menus for that matter).</p>
+<p>First thing to do is copy the "skin.confluence" folder from the main Kodi folder into the addons folder one level up from your userdata section. This again allows you to back up and restore your set up at any point in the future. Again in the case of a windows installation the main folder was at this location...</p>
+<p><code class="language-text">C:\Program Files (x86)\Kodi\addons</code></p>
+<p>The folder it was copied to was...</p>
+<p><code class="language-text">%AppData%\Kodi\addons</code></p>
+<p>Now inside this folder you'll find a "720p" folder. In here you're looking to edit "IncludesHomeMenuItems.xml" (might want to take a back up incase you edit something incorrectly and need to get back to how it was).</p>
+<p>Open it up in your XML editor of choice (or NotePad/TextEdit/nano will do), I prefer Sublime Text 2. The structure is simple includes > include > control. You're looking to add/remove controls within the include of choice. I wanted my sub-menus under Movies and TVShows so this meant adding/removing controls from "HomeSubMenuMovies" and "HomeSubMenuTVShows" respectively. Leave the image controls at the start and end alone (they're just for the look of the submenus at their ends). Changing the control order in the file changes the order in Kodi/XBMC.</p>
+<p>It's hard to know what the existing controls are for because their label tag points to an id (of stored label names) rather than an actual label. However the onclick tag gives it away. Most are using the ActivateWindow() function (which we will also use) in the format of, for example (Videos, MoviesActors, return). What this means is it's using the Videos library, targeting movies, grouped by actors (ignore the return, it has to do with the action when you click back, whether you return to the root menu or not). The following page in the Kodi wiki explains the ActivateWindow function and it's parameters.</p>
+<p>So what we want to do is remove (or comment out using &#x3C;!-- -->) those controls we don't care about. I commented out the movie genre, actors and years controls as I rarely use them. Now we add our items and target our smart playlists. Below is an example.</p>
+<pre>&lt;control type="button" id="99000"&gt;
+   &lt;include&gt;ButtonHomeSubCommonValues&lt;/include&gt;
+   &lt;label&gt;Kids&lt;/label&gt;
+   &lt;onclick&gt;ActivateWindow(Videos,special://userdata/playlists/video/KidsMovies.xsp,return)&lt;/onclick&gt;
+&lt;/control&gt;</pre>
+<p>It's quite similar to the existing items except I've explicitly placed a text label there and the ActivateWindow function is a bit different this time. I'm still targeting the Videos database, however I'm using the "special" (protocol I guess it could be called) to get to our userdata path and then target the respective smart playlist. Now take note, your controls all need an Id and it needs to be unique for each of them. I started at the 99000s as nothing else in the file had these.</p>
+<p>Btw, editing the main menu items is also simple, just look in the "Home.xml" file instead.</p></div></div></main><footer>© <!-- -->2019<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/how-to-customise-confluence-sub-menus-in-kodi-xbmc";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-04b2cc8f2bbde2ee124b.js"],"component---src-templates-post-js":["/component---src-templates-post-js-d4a877ce87da7f1aeeba.js"],"component---src-pages-404-js":["/component---src-pages-404-js-72e1d304df32c3842c4e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a66c07ff6121949299b5.js"]};/*]]>*/</script><script src="/webpack-runtime-b60f1a090960404fc395.js" async=""></script><script src="/commons-0ef128c00b983c39b4bc.js" async=""></script><script src="/styles-b36d26e0bd319d623cd5.js" async=""></script><script src="/component---src-templates-post-js-d4a877ce87da7f1aeeba.js" async=""></script><script src="/app-04b2cc8f2bbde2ee124b.js" async=""></script></body></html>
